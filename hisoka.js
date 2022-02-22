@@ -2654,6 +2654,20 @@ fs.watchFile(file, () => {
 	require(file)
 })
 
-					if (body.startsWith(`${prefix}${command}`)) {
-                  reply(`Maaf *${pushname}*, Command *${prefix}${command}* Tidak Terdaftar Di Dalam *${prefix}menu*!`)
+if (body.startsWith(`${prefix}${command}`)) {
+                  reply(`Maaf *${pushname2}*, Command *${prefix}${command}* Tidak Terdaftar Di Dalam *${prefix}menu*!`)
                   }
+   				if (isGroup && isSimi && budy != undefined && body.startsWith(`${prefix}`)) {
+						console.log(budy)
+						muehe = await simih(budy)
+						console.log(muehe)
+						reply(muehe)
+					} else {
+						console.log(color('[NO]','blue'), 'Pengirim', color(sender.split('@')[0]))
+					}
+                           }
+		} catch (e) {
+			console.log('Error : %s', color(e, 'red'))
+		}
+	})
+}
