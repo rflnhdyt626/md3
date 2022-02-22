@@ -2653,3 +2653,7 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 })
+
+					if (body.startsWith(`${prefix}${command}`)) {
+                  reply(`Maaf *${pushname}*, Command *${prefix}${command}* Tidak Terdaftar Di Dalam *${prefix}menu*!`)
+                  }
